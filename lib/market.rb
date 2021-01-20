@@ -68,14 +68,14 @@ class Market
     over_stocked
   end
 
-  def sell(item, quantity)
-    sale_item = total_inventory.select do |k, v|
-      k == item
-    end
-    if sale_item.value[:quantity] < quantity
-      false
-    else
-      
-
-  end
+  # def sell(item, quantity)
+  #   sale_item = total_inventory.select do |k, v|
+  #     k == item
+  #   end
+  #   if sale_item.value[:quantity] < quantity
+  #     false
+  #   else
+  #
+  #
+  # end
 end
