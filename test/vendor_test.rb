@@ -13,10 +13,16 @@ class VendorTest < Minitest::Test
     assert_instance_of Item, @item1
   end
 
-  def test_it_has_attributes
+  def test_other_things
     assert_equal "Tomato",  @item2.name
     assert_equal 0.5, @item2.price
   end
+
+  # def test_it_has_attributes
+  #   assert_equal "Tomato",  @item2.name
+  #   require "pry"; binding.pry
+  #   assert_equal 0.5, @item2.price
+  # end
 
   def test_vendor_existst
     assert_instance_of Vendor, @vendor

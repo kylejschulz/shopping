@@ -1,9 +1,12 @@
 class Item
   attr_reader :name,
-              :price 
+              :price
   def initialize(args)
     @name = args[:name]
-    @price = args[:price]
-
+    @price = args[:price][1..-1].to_f
   end
+
+  # def price_int
+  #   @price[1..-1].to_i
+  # end
 end
